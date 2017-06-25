@@ -36,5 +36,5 @@ app.get('/:date', function(req, res) {
     );
 });
 
-
-app.listen(3000);
+var port = process.env.PORT || 3000;
+app.listen(port);
