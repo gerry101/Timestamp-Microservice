@@ -5,7 +5,7 @@ var bodyParser = require('body-parser'),
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', function(req, res) {
-   res.send('Please add a Unix timestamp or the natural language form of a date in the url e.g (http://localhost:3000/1450126800 or http://localhost:3000/December%2015,%202015)')
+   res.send('Please add a Unix timestamp or the natural language form of a date in the url e.g (https://gentle-eyrie-88925.herokuapp.com/1450126800 or https://gentle-eyrie-88925.herokuapp.com/December%2015,%202015)')
 });
 
 app.get('/:date', function(req, res) {
